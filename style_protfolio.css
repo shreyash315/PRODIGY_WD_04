@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+/* navigation Bar */
+header{
+    height: 60 px;
+    background: linear-gradient(90deg,#192330,#9ea1ad);
+    display: flex;
+}
+.nav_name{
+    height: 60px;
+    display: flex;
+    color: white;
+    align-items: center;
+    font-weight: 600;
+}
+.icon{
+    height: 110px;
+    width: 100;
+    background-size: cover;
+    padding-top: 10px;
+}
+.nav_button{
+    margin-left: 650px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.nav_hire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,#184286,#4c72b7);
+    color: white;
+    margin: 10px;
+    border-radius: 35px;
+    width: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav_button p::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 6px;
+    width: 0;
+    background-color: #184286;
+    margin-top: 6px;
+    transition: all ease-in-out 250ms;
+}
+.nav_button p:hover::after{
+    width: 100%;
+}
+.nav_button p:hover{
+    color: #184286;
+    transition: all ease-in-out 250ms;
+}
+.nav_hire:hover{
+    border: 2px solid #8bb4f6;
+    font-weight: 700;
+    box-shadow:3px 3px 3px #8bb4f6;
+}
