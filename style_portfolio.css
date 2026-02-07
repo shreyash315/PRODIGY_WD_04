@@ -4,7 +4,7 @@
     border: border-box;
 }
 body{
-    background: linear-gradient(90deg,#0a162a,#182337);
+    background: #0a162a;
 }
 
 /* navigation Bar */
@@ -50,11 +50,13 @@ header{
     padding-right: 10px;
     cursor: pointer;
 }
-.nav_button p{
+.nav_button a{
     position: relative;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
-.nav_button p::after{
+.nav_button a::after{
     content: "";
     position: absolute;
     display: block;
@@ -64,10 +66,10 @@ header{
     margin-top: 6px;
     transition: 0.5s;
 }
-.nav_button p:hover::after{
+.nav_button a:hover::after{
     width: 100%;
 }
-.nav_button p:hover{
+.nav_button a:hover{
     color: #184286;
     transition: all ease-in-out 250ms;
 }
@@ -164,7 +166,7 @@ header{
 
 }
 .titleSection{
-    padding-top: 50px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     font-size: 50px;
@@ -223,8 +225,8 @@ header{
 .skills{
     color: white;
     font-weight: 600;
-    font-size: 20;
-    margin-right: 100px;
+    font-size: 16px;
+    margin-right: 50px;
     margin-top: 30px;
     width: 120px;
     height: 50px;
@@ -233,9 +235,119 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: 0.5px solid white;
+    border: 0.5px solid #8bb4f6;
 }
 .skills:hover{
     transform: scale(1.1,1.1);
     transition: 0.5s;
+    /* box-shadow:3px 3px 3px #eef2f854; */
+    box-shadow:3px 3px 3px #8bb4f6;
+}
+.projestSection{
+    height: 675px; 
+}
+
+.AllProject{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+.project{
+    background-color: #ffffff0f;
+    height: 450px;
+    width: 425px;
+    border-radius: 30px;
+}
+.porjectImage1{
+    height: 250px;
+    width: 425px;
+    background-image:url(project1.png) ;
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+}
+.projectTitle{
+    color: white;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 16pt;
+    font-weight: 600;
+}
+.proDescription{
+    color: #c6cad0;
+    width: 400px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14pt;
+}
+.project:hover{
+    transform: scale(1.05,1.05);
+    transition: 0.5s;
+    border: 1px solid #8bb4f6;
+    box-shadow:15px 15px  50px black;
+}
+.contactSection{
+    height: 755px;
+}
+.letConnect{
+    height: 475px;
+    width: 700px;
+    background-color: #ffffff0f;
+    justify-self: center;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.connectTitle{
+    color: #6979d0;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.connectDes{
+    color:#c6cad0;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.connectLink{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    width: 500px;
+    background-color: #ffffff0f;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.connectIcon{
+    height: 40px;
+    width: 40px;
+    padding-right: 10px;
+}
+.connectLink:hover{
+    margin-left: 60px;
+    border: 1px solid #8bb4f6;
+    transition: ease-in-out 0.3s;
+}
+.connectHr{
+    margin-top: 30px;
+    height: 1px;
+    background-color: #ffffff0f;
+    width: 600px;
+    justify-self: center;
+}
+.gmail{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.mailLoc{
+    color: #6979d0;
+}
+.address{
+    margin-top: 5px;
+    color: white;
 }
