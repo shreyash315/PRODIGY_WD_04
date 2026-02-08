@@ -3,6 +3,9 @@
     font-family:Arial,Helvetica,sans-serif;
     border: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #0a162a;
 }
@@ -29,15 +32,16 @@ header{
     padding: 15px 20px 10px 20px;
 }
 .nav_button{
-    margin-left: 45%;
+    margin-left: auto;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 500px;
+
 }
 
-.nav_hire{
+/* .nav_hire{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +53,7 @@ header{
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
-}
+} */
 .nav_button a{
     position: relative;
     cursor: pointer;
@@ -73,11 +77,11 @@ header{
     color: #184286;
     transition: all ease-in-out 250ms;
 }
-.nav_hire:hover{
+/* .nav_hire:hover{
     border: 2px solid #8bb4f6;
     font-weight: 700;
     box-shadow:3px 3px 3px #8bb4f6;
-}
+} */
 .heroSection{
     background-image:url(main_bag.jpeg) ;
     height: 735px;
@@ -137,6 +141,7 @@ header{
     justify-content: center;
     color: #fefefe;
     cursor: pointer;
+    text-decoration: none;
 }
 .downloadIcon{
     padding-left: 10px;
@@ -350,4 +355,93 @@ header{
 .address{
     margin-top: 5px;
     color: white;
+}
+.footerHr{
+    height: 3px;
+    background:#576cbc;
+    background: linear-gradient(90deg,#20498d,#4973c13c); 
+}
+footer{
+    height: 400px;
+    background-color: #030f21;
+}
+.footerMain{
+    display: flex;
+}
+.footerName{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+.footerProfession{
+    color: #6979d0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.footerdis{
+    color: #c6cad0 ;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.footerinfo{
+    padding-top: 80px;
+    padding-left: 150px;
+}
+.footerMailLogo{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.footerLogo{
+    height: 30px;
+    width: 30px;
+    border: 2px solid #c6cad0;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.mailId{
+    display: flex;
+    align-items: center;
+}
+.getInContact{
+    margin-top: 80px;
+    margin-left: 400px;
+}
+.contactTitle{
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+.mailId{
+    color:#c6cad0 ;
+    margin-top: 10px;
+}
+.copyright{
+    display: flex;
+}
+.copy{
+    margin-top: 110px;
+    margin-left: 100px;
+    color:#c6cad0 ;
+}
+.rights{
+    margin-top: 110px;
+    margin-left: 500px;
+    color:#c6cad0 ;
+}
+.topLogo{
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    background-color: #395295;
+    border-radius: 50%;
+    margin-top: 90px;
+    margin-left: 60px;
+}
+.topLogo:hover{
+    margin-top: 80px;
+    transition: ease-in-out 0.5s;
 }
